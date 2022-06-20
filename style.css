@@ -1,0 +1,75 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	max-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	overflow: hidden;
+	background: url('./1669_novogodnie-filmy-skazki-gallery1261340003.jpg') 0 0 / cover no-repeat;
+}
+
+h1{
+	margin: 150px 0 50px 0;
+	font-weight: 600;
+	font-size: 60px;
+	background: linear-gradient(to right, #f00, #ffa500, #ff0, #008000, #00f, #4b0082, #ee82ee);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.comtainer{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: scale(2);
+}
+.time:not(:last-child){
+	margin: 0 30px 0px 0px;
+}
+.time small{
+	background: radial-gradient(circle, rgb(14, 189, 241) 0%, rgb(120, 216, 10) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-shadow:
+			-1px 0 1px rgb(16, 226, 51),
+			0px -1px 0px rgb(0, 0, 0);
+}
+.time h2{
+	background: linear-gradient(to bottom, #b721ff, #2af598, #fec051, #fee140, #faec70);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	font-weight: 700;
+	font-size: 36px;
+	padding: 0 0 10px 0;
+}
+@media (max-width: 650px){
+	h1 {
+			margin: 80px 0 50px 0;
+			font-size: 50px;
+		}
+}
+
+
+@media (max-width: 530px) {
+	h1{
+		margin: 50px 0 50px 0;
+		font-size: 40px;
+	}
+	.comtainer{
+		transform: scale(1.2);
+	}
+	.time:not(:last-child) {
+		margin: 0 15px 0px 0px;
+	}
+	.time h2{
+	font-weight: bold;
+	font-size: 30px;
+	padding: 0 0 10px 0;
+	}
+}
